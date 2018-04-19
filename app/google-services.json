@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "767294955581",
+    "firebase_url": "https://noobs-bdd58.firebaseio.com",
+    "project_id": "noobs-bdd58",
+    "storage_bucket": "noobs-bdd58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767294955581:android:c53f9abaf9e07adf",
+        "android_client_info": {
+          "package_name": "dev18.noobs.com.noobsdev18"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767294955581-pq4s8k53nftnl55ruuqutdqsccasr59d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt5baskK4xC4efvOz98mNmVHEdGWBsDmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

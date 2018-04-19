@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="#ffffff">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#ce2b54"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/choose_screen_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose a screen name"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/screen_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_screen_name"
+                android:layout_marginTop="10dp"
+                android:maxLength="12"
+                android:hint="Enter a Screen Name" />
+
+            <TextView
+                android:id="@+id/choose_your_skills_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/screen_name_edit_text"
+                android:layout_marginTop="20dp"
+                android:text="Choose your skill(s)"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:id="@+id/skills_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_your_skills_text"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/batting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Batting"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/bowling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Bowling"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/keeping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Keeping"
+                    android:textSize="20dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fav_nets_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skills_layout"
+                android:layout_marginTop="20dp"
+                android:text="Choose your favorite nets"
+                android:textSize="25dp"
+                android:maxLength="12"/>
+
+            <EditText
+                android:id="@+id/favoriteNet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fav_nets_text"
+                android:layout_marginTop="10dp"
+                android:maxLength="12"
+                android:hint="Enter you favorite nets" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/tick" />
+
+            <CheckBox
+                android:id="@+id/email_noti_check_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/favoriteNet"
+
+                android:text="Email notification" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
